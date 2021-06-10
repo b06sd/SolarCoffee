@@ -10,8 +10,8 @@ using SolarCoffee.Data;
 namespace SolarCoffee.Data.Migrations
 {
     [DbContext(typeof(SolarDbContext))]
-    [Migration("20210608181317_ProductInventorySales")]
-    partial class ProductInventorySales
+    [Migration("20210610110708_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -302,7 +302,7 @@ namespace SolarCoffee.Data.Migrations
                     b.Property<DateTime>("CreatedOn")
                         .HasColumnType("timestamp without time zone");
 
-                    b.Property<DateTime>("DateArchived")
+                    b.Property<DateTime?>("DateArchived")
                         .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("Description")

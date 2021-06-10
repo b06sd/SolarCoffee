@@ -300,7 +300,7 @@ namespace SolarCoffee.Data.Migrations
                     b.Property<DateTime>("CreatedOn")
                         .HasColumnType("timestamp without time zone");
 
-                    b.Property<DateTime>("DateArchived")
+                    b.Property<DateTime?>("DateArchived")
                         .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("Description")
