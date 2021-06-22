@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SolarCoffee.Web.Serialization
 {
-    public class ProductMapper
+    public static class ProductMapper
     {
 
         /// <summary>
